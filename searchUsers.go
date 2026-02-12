@@ -38,11 +38,6 @@ func main() {
 	for _, singleAccount := range accounstList {
 		fields := strings.Split(singleAccount, ":")
 		if fields[6] != "/usr/sbin/nologin" {
-			// fmt.Printf("%sUsername:%s \t%s\n%sUID:%s \t\t%s\n%sGID:%s \t\t%s\n%sShell:%s \t\t%s\n\n",
-			// 	bold, reset, fields[0],
-			// 	bold, reset, fields[2],
-			// 	bold, reset, fields[3],
-			// 	bold, reset, fields[6])
 			printBold("Username:\t", fields[0])
 			printBold("UID:\t\t", fields[2])
 			printBold("GID:\t\t", fields[3])
